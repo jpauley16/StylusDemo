@@ -1,0 +1,52 @@
+//Variables
+font-size = 14px
+
+//expression list
+font = font-size "Lucida Grande", Arial
+
+p
+  font font
+  // or
+  //font 14px "Lucida Grande", Arial
+
+/*
+compiled to CSS
+
+p {
+  font: 14px "Lucida Grande", Arial;
+}
+
+p {
+  font: 14px "Lucida Grande", Arial;
+}
+
+*/
+
+// Fucntion declaration
+add(a, b)
+  a + b
+
+// Mixin definition
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+body
+  font font-size Arial, sans-serif
+  padding add(10px, 5)
+  div
+    div
+      div
+        color yellowgreen
+        p
+          font 20px Arial, sans-serif
+          background-color @color
+          color black
+          border-radius 5px
+h2
+  color darkolivegreen
+
+
+
+
